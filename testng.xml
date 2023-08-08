@@ -5,6 +5,7 @@
     <classes>
       <class name="testcases.LoginTest"/>
       <class name="testcases.HomeTest"/>
+      <class name="testcases.Dash"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
