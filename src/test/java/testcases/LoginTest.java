@@ -16,6 +16,7 @@ public void loginToApplication(String uname, String pass) {
 	LoginPage login = new LoginPage(driver);
 	login.loginToApplication(uname, pass);
 	System.out.println("Successfully done");
+	System.out.println("Successfully done again");
 	
 }
 }
