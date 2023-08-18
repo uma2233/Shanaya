@@ -7,15 +7,20 @@ import org.testng.annotations.Test;
 
 import base.Base;
 import dataProvider.CustomDataProvider;
-
+import listeners.ExtentManager;
+import pages.HomePage;
 import pages.LoginPage;
 
 public class LoginTest extends Base {
 @Test(dataProvider = "loginDetails",dataProviderClass = CustomDataProvider.class)
-public void loginToApplication(String uname, String pass) {
-	LoginPage login = new LoginPage(driver);
+public void validLogin(String uname, String pass) {
+	HomePage home = new HomePage(driver);
+	
+	//LoginPage login = new LoginPage(driver);
+	LoginPage login = home.clickOnLoginButton();
 	login.loginToApplication(uname, pass);
 	System.out.println("Successfully done");
+	//ExtentManager.createInstance();
 	
 }
 }

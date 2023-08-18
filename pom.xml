@@ -58,8 +58,14 @@
 <version>3.1.2</version>
 <configuration>
 <suiteXmlFiles>
-<suiteXmlFile>testng.xml</suiteXmlFile>
+<suiteXmlFile>RunTwoTogether.xml</suiteXmlFile>
 </suiteXmlFiles>
+<properties>
+   <property>
+      <name>suitethreadpoolsize</name>
+      <value>2</value>
+   </property>   
+ </properties>
 </configuration>
 </plugin>
 </plugins>
