@@ -20,7 +20,11 @@ public void validLogin(String uname, String pass) {
 	LoginPage login = home.clickOnLoginButton();
 	login.loginToApplication(uname, pass);
 	System.out.println("Successfully done");
+<<<<<<< HEAD
 	//ExtentManager.createInstance();
+=======
+	System.out.println("Successfully done again");
+>>>>>>> c9ee277164bf1b97e5f26d16f42c93764aa98b29
 	
 }
 }
