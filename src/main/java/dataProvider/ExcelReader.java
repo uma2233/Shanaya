@@ -15,7 +15,7 @@ public class ExcelReader {
 			File src = new File("C:\\Users\\singh\\eclipse-workspace\\HybridFramework\\testdata1\\testdata.xlsx");
 			FileInputStream fis = new FileInputStream(src);
 			XSSFWorkbook wb = new XSSFWorkbook(fis);
-			XSSFSheet sheet = wb.getSheet("login");
+			XSSFSheet sheet = wb.getSheet("demQ");
 			int rows = sheet.getPhysicalNumberOfRows();
 			int columns = sheet.getRow(0).getPhysicalNumberOfCells();
 			arr = new Object[rows][columns];

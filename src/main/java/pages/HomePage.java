@@ -8,10 +8,9 @@ public class HomePage {
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
 	}
-	By loginButton = By.xpath("//*[text()='Log in ']");
+	By dashmessage = By.xpath("//h6[@class='oxd-text oxd-text--h6 oxd-topbar-header-breadcrumb-module']");
 	
 	public LoginPage clickOnLoginButton() {
-		driver.findElement(loginButton).click();
 		LoginPage login = new LoginPage(driver);
 		return login;
 		

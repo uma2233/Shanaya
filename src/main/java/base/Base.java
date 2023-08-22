@@ -13,8 +13,8 @@ public class Base {
 
 	  @BeforeClass
 	  public void setupBrowser() {
-		  driver =Browserfactory.startBrowser("chrome", "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-	  }
+		  //driver =Browserfactory.startBrowser("chrome", "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		driver =Browserfactory.startBrowser("chrome", "https://demoqa.com/login"); }
 	  
 	  @AfterClass
 	  public void closeBrowser() {
